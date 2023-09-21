@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="general">
+        <div class="header">
+            <h1 class="header_text">Todo List on my week</h1>
+            <div class="header_flex"></div>
+            <button id="new_task_btn" class="add_btn" onclick="onNewTaskClick()">+</button>
+        </div>
+
+        <div id="add_block" class="add_block">
+            <div> 
+                <label class="name_task" for="name">Name:</label>
+                <input class="field" type="text" id="name" />
+            </div>
+            <div>
+                <label class="description_task" for="description">Discription:</label>
+                <input class="field" type="text" id="description" />
+            </div>
+            <div>
+                <label class="title_field" for="select">Category</label>
+                <select name="" id="select">
+                    <option value="Home">Home</option>
+                    <option value="Work">Work</option>
+                    <option value="Private">Private</option>
+                    <option value="Study">Study</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+            <div class="header_flex"></div>
+            <div class="btns">
+                <button class="buttons" id="even_btn" onclick="onEvenClick()">Even</button>
+                <button class="buttons" id="odd_btn" onclick="onOddClick()">Odd</button>
+                <button  class="buttons"id="delete_first_btn" onclick="onDeleteClick(0)">Delete first</button>
+                <button  class="buttons"id="delete_last_btn" onclick="onDeleteLastClick()">Delete last</button>
+
+            </div>
+            <button class="add_task_btn" id="add_btn" onclick="onAddClick()">Add</button>
+        </div>
+
+        <div>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
